@@ -8,8 +8,24 @@ export const Content = styled.div`
     max-width: 1120px;
     margin: 0 auto;
 
-    padding: 0 1rem 10rem;
-    display:flex;
-    align-items: center;
-    justify-content: space-between;
+    padding: 2rem 1rem 10rem; // altura/lado/altura cor
+    display: flex;
+    align-items: center; // alinha button e logo
+    justify-content: space-between; // da espaço entre logo e botao
+
+    button{
+        font-size: 1rem;
+        color: #fff;
+        background: var(--blue-light);
+        border: 0;
+        padding: 0 2rem ;
+        border-radius:0.25rem;
+        height: 3rem;
+
+        transition : filter 0.2s; //faz uma transição quando ativa o filter
+
+        &:hover{
+            filter: brightness(0.9); 
+        }
+    }
 `;
